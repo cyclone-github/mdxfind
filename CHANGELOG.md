@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------
-mdxfind 1.127 (2023-05-13)
+mdxfind 1.127 (2025-05-13)
 - AIX support has been semi-deprecated 
     See ./archive/, or reach out if you need newer
 - Bug fixes
