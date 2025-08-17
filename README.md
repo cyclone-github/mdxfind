@@ -1,8 +1,39 @@
 Latest available binaries I could find for mdxfind.
 
-_All credits go to Waffle and hops_
+_All credits go to @[Waffle2](https://github.com/waffle2) and @[hops](https://github.com/hops)_
 
 On debian, you will need to install `libjudy` https://packages.debian.org/search?keywords=libjudydebian1
 
-You can also find the latest mdxfind info and binaries hosted on Tycho Tithonus (Royce Williams) website:
+You can also find the latest mdxfind info and binaries hosted on Tycho Tithonus @[roycewilliams](https://github.com/roycewilliams) website:
 - https://www.techsolvency.com/pub/bin/mdxfind/
+
+### mdxfind binaries
+sha256sum
+```
+216f0f949dfeebf8b80daef931cec92471ae9fc555e24c2be663b64afc3464b6  mdsplit
+2029f38f4fb91f8ce648c094b2a84dc9b8361a16bf520344c0d037536727904e  mdsplit-32
+2155b80fe74807eba6ea5ab13f15ef3a3635f0b5f972df32883c31ab7f7ac9b2  mdsplit-32.exe
+3236af3f7cc5d2b033f7628c4ab8167e365ab28c29e153fc6f6c784526107c17  mdsplit.aix
+a1a78b36c138a8309055811986e4dd51c1930cf5d7f9259bd0c2f2fd35eb5f99  mdsplit.arm6
+ecb48c51f0d1e4d9976037552468224b39812f9d8799d0cf835df6fd675249e5  mdsplit.arm7
+dc2a464d1d8a782574ff8b2ff3c82f776ff1acc505afa4879c6f5832f3a95647  mdsplit.arm8
+b0bb01f5fe50c3c4e597ecd5dc869d5ed071a2eb9f41fa7c803275b62ad637eb  mdsplit.exe
+7e2ff5bcfa95d34458967df99ebd093647b2f24d4b875b61577181565522a7d9  mdsplit.freebsd
+856be5020bdde498f57947443d7bc69d2d71171507a0483cc049ea86a191e7d4  mdsplit.mac
+6c8b6c0798fcaef5f590ca3e5f9eef67759faeedb2f640b204e187518b9a03e0  mdsplit.macm1
+fdb83236c8250474bf69480565f67c3ffc8a3999c911f42d369880e5b1fbcdfe  mdsplit.power8
+8016f7750a076d041ebc76b63dc23b6e6fd1c4a02a90e0408af731151590f6b2  mdxfind
+e43127543a8d2df8c7e42391f64f1ad7bd38f80fbf9e653d76cf20153e5e2730  mdxfind-1.127-2025-05-31.zip
+e73ba0e9ffe9b2f0c32e17adfd65273848c5d577d40ecfc11a1cc1fec05363a0  mdxfind-32
+404b7b745a2b7798b9b699e78715da59bfc96f67c4a8f631044145fd0725ed54  mdxfind-32.exe
+e3ee838f136e7394910efd0f74965497eccf35f5eec1565fce10a3926b093a19  mdxfind.aix
+6b4016a5c7c5f21f484877732f3d4cc2e51126a8581af93bc79b7220132a3b4a  mdxfind.arm6
+947e6bfa89b782dda7cda929b446bf3cf33abf3555706f4c9938b703b0b60799  mdxfind.arm7
+457d4d22569106f183f0c37966e5b1886a99087b5b639f42dc172eddaf56b25e  mdxfind.arm8
+af7433b91b1a2a7a9c62ad7dd14d5e0c26a2838efb0833952a44ae98b2737da6  mdxfind.exe
+aa4be3ebcf349c3a87112405a59c65d739e3bd92eedcda928f26fc794d924ff3  mdxfind.freebsd
+1bcdf13b343814187557108f3bdcdbc0f0f9f1fa9ea3917473bf28fefc1028d1  mdxfind.mac
+81ff342c6d56f6f1f5a13dfa1dde5d3ada14d8c97257804a2aef27da9ae8d525  mdxfind.macm1
+bb35a28a4f83ac5a637d224c4f9030c88ee656fe5f8f7751f694fc2f2c9f9952  mdxfind.power8
+ad23ed7e631dd33be2e74af27f4cfd29421063e4977540abc9a36cf2e1a12415  mdxfind.static
+```
