@@ -1,9 +1,44 @@
-------------------------------------------------------------------------------
-mdxfind 1.127 (2025-05-13)
-- AIX support has been semi-deprecated 
-    See ./archive/, or reach out if you need newer
-- Bug fixes
+-------------------------------------------------------------------------------
+MDXfind changelog
+Current location: https://www.techsolvency.com/pub/bin/mdxfind/CHANGES.txt
+-------------------------------------------------------------------------------
+mdxfind 1.130 (2025-08-19)
+- All libraries are now included in all binaries (to remove dependencies).
+    Separate '.static' Linux builds have been deprecated and retired.
+    Symlinks are provided for now, but will be removed in the future.
+- mdsplit maximum plaintext length increased to 80,960 bytes.
+- Restored mention of the "just show usage" flag (-?).
+    This flag has been present since 1.115 but accidentally unlisted.
+- Explicitly made -h (without params) the way to list hash types.
+    Now also explicitly listed in usage as:
+    -h  Use regex to select hash types, comma separated. OK to use multiple times
+- New flags:
+    -V  Display version
+- New hash types: none.
+- Distribution page expanded significantly; feedback needed.
+
+--------------------------------------------
+mdxfind 1.129 (2025-08-17)
+- Embed PCRE 8.x in some binaries (becoming less available on some platforms).
+- FreeBSD bug fixes.
+- Retirement of .static binaries (but this is being discussed further).
 - New hash types:
+    SHA1MD5SALTPASS
+    SHA1SHA256MD5MD5
+    SHA224SHA1
+
+--------------------------------------------
+mdxfind 1.128 (2025-05-20)
+- New hash types:
+    SHA11SALTMD5SHA256
+
+--------------------------------------------
+mdxfind 1.127 (2025-05-13)
+- AIX support has been semi-deprecated.
+    See ./archive/, or reach out if you need newer.
+- mdxfind maximum supported plaintext length is now 40,960 bytes.
+- Bug fixes.
+- New hash types, many driven by hash-in-hash Pwned Passwords discoveries.
     BCRYPT256
     MD4UTF16DESCRYPT
     MD4UTF16MD5HUM
@@ -196,10 +231,183 @@ mdxfind 1.127 (2025-05-13)
     SHA1revSHA1
     SHA256MD5SHA256MD5
 
-------------------------------------------------------------------------------
+--------------------------------------------
+mdxfind 1.124 (2025-02-28)
+- Bug fixes.
+- New hash types:
+    MD4UTF16SHA256SHA256SHA256SHA256SHA256
+    MD4UTF16SHA256x
+    MD5DECBASE64MD5
+    MD5MD5SHA1SALT
+    MD5MD5SHA256SALT
+    MD5SHA1MD5MD5SHA1MD5
+    MD5SHA1x
+    SHA1-SHA1SALTSHA1PASS
+    SHA11SALTMD5UC
+    SHA1GOST
+    SHA1MD4UTF16UCMD4UTF16UC
+    SHA1MD5MD5SQL5
+    SHA1MD5MD5UC
+    SHA1MD5MD5UCMD5UC
+    SHA1MD5RAWUCMD5RAW
+    SHA1MD5SHA1MD5MD5SHA1MD5
+    SHA1MD5SQL5
+    SHA1MD5UCSHA1BASE64
+    SHA1MD5UCSHA1UCMD5UC
+    SHA1MD5UCx
+    SHA1MD5sub1-20MD5MD5
+    SHA1MD5sub8-24MD5
+    SHA1RMD128
+    SHA1SALTMD5MD5PASSPEPPER
+    SHA1SALTMD5PASSMD5
+    SHA1SALTSHA256TRUNC
+    SHA1SALTSHA256TRUNCMD5
+    SHA1SHA1UCPASSSALT
+    SHA1SHA3-256
+    SHA1SHA3-256TRUNC
+    SHA1SHA512TRUNCMD5
+    SHA1UTF16BEZ
+    SHA1UTF16LE
+
+--------------------------------------------
+mdxfind 1.123 (2024-10-19)
+- Bug fixes.
+- New hash types:
+    BCRYPT256
+    MD4UTF16DESCRYPT
+    MD4UTF16MD5HUM
+    MD4UTF16SHA1HUM
+    MD5BASE64SHA1MD5
+    MD5DECBASE64
+    MD5WRLSHA1
+    SHA1-HMAC-MD5
+    SHA1-MD5-MD5SALTMD5PASS
+    SHA1-MD5-MD5SALTMD5PASS-SALT
+    SHA1-MD5CAPMD5SALT
+    SHA1-MD5CAPPEPPER-MD5SALT
+    SHA1-MD5CAPSALT
+    SHA1-MD5PASSMD5MD5SALT
+    SHA1-MD5PASSSALT
+    SHA1-MD5PEPPER-MD5MD5SALT
+    SHA1-MD5PEPPER-MD5SALT
+    SHA1-MD5PEPPER-MD5SALTMD5PASS
+    SHA1-MD5SHA1PASSSHA1MD5SALT
+    SHA1-MD5SHA256SALT
+    SHA1-MD5UC-MD5SALT
+    SHA1-MD5UCMD5UCPASSMD5UCSALT
+    SHA1-MD5sub8-24SALT
+    SHA1-PEPPER-MD5SALT
+    SHA1-SHA512PASSSHA512SALT
+    SHA1DECBASE64
+    SHA1DESCRYPT
+    SHA1HAV128
+    SHA1MD2
+    SHA1MD5-PASSMD5SALT
+    SHA1MD5-SALTMD5PASS
+    SHA1MD5-SHA1PASSPASS
+    SHA1MD51CAP
+    SHA1MD51CAPSALT
+    SHA1MD5BASE64
+    SHA1MD5BASE641SALT
+    SHA1MD5CAP
+    SHA1MD5CAPMD5
+    SHA1MD5CAPSALT
+    SHA1MD5DSALT
+    SHA1MD5MD5DSALT
+    SHA1MD5MD5PASS
+    SHA1MD5MD5SALT
+    SHA1MD5MD5SHA1SHA1MD5
+    SHA1MD5MD5UCx
+    SHA1MD5PASSMD5
+    SHA1MD5RAW
+    SHA1MD5SALT
+    SHA1MD5SALTMD5PASS
+    SHA1MD5SALTPASSPEPPER
+    SHA1MD5SHA1-SALT
+    SHA1MD5SHA1MD5SHA1
+    SHA1MD5SHA512
+    SHA1MD5TRUNCSALT
+    SHA1MD5UC-MD5UCSALT
+    SHA1MD5UCMD5
+    SHA1MD5UCMD5UC
+    SHA1MD5UCMD5UCMD5UC
+    SHA1MD5UCMD5UCMD5UCMD5UC
+    SHA1MD5UCSALT
+    SHA1MD5WRLSHA1
+    SHA1MD5_2xMD5_MD5
+    SHA1MD5sub1-20MD5
+    SHA1MD6CAPTRUNC
+    SHA1MD6TRUNC
+    SHA1NTLM
+    SHA1NTLMUC
+    SHA1PASS-TRUNC
+    SHA1SALTMD5MD5PASS
+    SHA1SALTMD5PASSPEPPER
+    SHA1SALTMD5UC
+    SHA1SALTMD5UCPASSPEPPER
+    SHA1SALTSHA1PASSPEPPER
+    SHA1SALTSHA256
+    SHA1SALTSHA256UCTRUNC
+    SHA1SALTSHA512UCTRUNC
+    SHA1SHA1CAPSALT
+    SHA1SHA1CAPTRUNC
+    SHA1SHA1MD5MD5PASS1SALT
+    SHA1SHA1MD5PASSSALT
+    SHA1SHA1PASS-TRUNC1SALT
+    SHA1SHA1PASSSALT
+    SHA1SHA1TRUNC
+    SHA1SHA1TRUNC-SHA1PASS-3
+    SHA1SHA1UCTRUNC
+    SHA1SHA1u34
+    SHA1SHA1u35
+    SHA1SHA1u36
+    SHA1SHA1u37
+    SHA1SHA1u38
+    SHA1SHA1u39
+    SHA1SHA224
+    SHA1SHA256CAP
+    SHA1SHA256MD5SHA256MD5
+    SHA1SHA256SHA1
+    SHA1SHA256SHA256
+    SHA1SHA256SHA256SHA256
+    SHA1SHA256SHA512
+    SHA1SHA256TRUNC
+    SHA1SHA256TRUNCMD5
+    SHA1SHA256TRUNCMD5SALT
+    SHA1SHA256TRUNCSALT
+    SHA1SHA256UCSHA256
+    SHA1SHA256UCSHA256SHA256
+    SHA1SHA256UCTRUNC
+    SHA1SHA256UCx
+    SHA1SHA256UCxSHA256
+    SHA1SHA256u32
+    SHA1SHA256u34
+    SHA1SHA256u36
+    SHA1SHA256u37
+    SHA1SHA256u38
+    SHA1SHA256u40
+    SHA1SHA256u42
+    SHA1SHA256x
+    SHA1SHA512TRUNC
+    SHA1SHA512TRUNC1SALT
+    SHA1SHA512UC
+    SHA1SHA512UCTRUNC
+    SHA1SQL5-32
+    SHA1WRLTRUNC
+    SHA1WRLUCTRUNC
+    SHA1WRLUCTRUNCSALT
+    SHA256MD5SHA256MD5
+
+--------------------------------------------
+mdxfind 1.121 (2024-02-15)
+- New hash types:
+    MD5BASE64SHA1MD5
+    SHA1DESCRYPT
+
+--------------------------------------------
 mdxfind 1.120 (2023-01-23)
-- Mac M1 binaries
-- Bug fixes
+- Mac M1 binaries.
+- Bug fixes.
 - New hash types:
     MD4UTF16MD5MD5MD5
     MD4UTF16MD5SHA1
@@ -220,4 +428,186 @@ mdxfind 1.120 (2023-01-23)
     MD5SHA1u39
     MD5UCMD5
     SHA1SHA256UC
-------------------------------------------------------------------------------
+
+--------------------------------------------
+mdxfind 1.117 (2020-03-11)
+- New hash types:
+    CRYPTEXT
+    HMAC-SHA384
+    MANGOS
+    MD4UTF16MD5MD5
+    MD5-2xSHA1MD5
+    MD5SHA1lsb35
+    MD5SQL3SQL5MD5MD5
+    MD5revMD5SALT
+    MD5sub1-20MD5
+    MD5sub1-20MD5MD5
+    MD5sub8-24SALT
+    MYSQL5MD5
+    SHA1MD5SHA256
+    SHA1SHA256MD5
+
+--------------------------------------------
+mdxfind 1.116 (2022-03-31)
+- ?
+- New hash types: none.
+
+--------------------------------------------
+mdxfind 1.115 (2020-05-12)
+- New flags:
+    -?  Shows this help message
+
+- New hash types:
+    PHPBB3MD5
+    SHA512CRYPTMD5
+
+--------------------------------------------
+mdxfind 1.112 (2017-11-01)
+
+- New hash types:
+    CISCO8
+    HMAC-GOST
+    HMAC-TIGER192
+    MD5-SALTSHA1SALTPASS
+    PBKDF2-MD5
+    PBKDF2-SHA1
+    PBKDF2-SHA256
+    PBKDF2-SHA512
+    PKCS5S2
+    PROGRESSENCODE
+    SHA1-CUSTOMUSERSALT
+
+--------------------------------------------
+mdxfind 1.107 (2017-10-23)
+- New / modified flags:
+   -r  File to read rules from (concatenated)
+   -R  File to read rules from (dot-product form)
+   -Z  Enable histogram of rule hits
+
+- New hash types:
+    MD5BASE64BASE64
+    MD5BASE64BASE64BASE64
+
+--------------------------------------------
+mdxfind 1.103 (2017-10-06)
+- New hash types:
+    MD5bcad
+    MD5dcab
+    SHA256SALTSHA256PASS
+
+--------------------------------------------
+mdxfind 1.102 (2017-10-04)
+- New hash types:
+    MD5SHA1MD5SHA1MD5SHA1MD5SHA1MD5SHA1MD5SHA1
+    SHA1SALTCX
+
+--------------------------------------------
+mdxfind 1.101 (2017-09-30)
+- New hash types:
+    MD5-MD5PASS-SALT
+    MD5-MD5SALT-PASS
+    MD5-PASS-MD5SALT
+    MD5-SALTMD5PASSSALT
+    MD5-SALTMD5SALTPASS
+    SHA1SALTSHA1PASS
+    SHA512SALTMD5
+
+--------------------------------------------
+mdxfind 1.100 (2017-09-28)
+- New hash types:
+    SHA256CRYPT
+    SHA512CRYPT
+
+--------------------------------------------
+mdxfind 1.98 (2017-09-25)
+- New hash types:
+    MD5-MD5PASSMD5
+    MD5CRYPT
+    MD5MD5PASSSHA1
+    MD5PASSMD5MD5MD5
+    MD5PASSMD5MD5PASS
+    MD5PASSSHA1
+    MD5PASSSHA1MD5
+    SHA1MD5MD5SHA1MD5SHA1SHA1MD5
+    SHA512SHA512RAWUSER
+
+--------------------------------------------
+mdxfind 1.94 (2017-09-05)
+- New hash types:
+    DESCRYPT
+    MD4DESCRYPT
+    MD4SHA1MD5
+    MD4UTF16
+    MD4UTF16MD5
+    MD5-4xMD5-SALT
+    MD5BASE64SHA256RAW
+    MD5DESCRYPT
+    MD5GOST
+    MD5GOSTMD5
+    MD5GOSTMD5UC
+    MD5MD2
+    MD5MD2RAW
+    MD5RAWMD5RAW
+    MD5SHA0
+    MD5SHA1BASE64SHA1RAW
+    MD5WRLRAW
+    MD5revMD5SHA1SHA1
+    RMD128MD4
+    SHA1MD5SHA1MD5SHA1MD5SHA1
+    SHA1WRLMD5
+    SHA256UC
+    WRLSHA512
+
+--------------------------------------------
+mdxfind 1.93 (2017-08-25)
+- New flags:
+   -v  Do not mark salts as found.
+   -w  Number of lines to skip from first wordlist
+   -y  Enable directory recursion for wordlists
+   -z  Enable debugging information/hash results
+
+- New hash types:
+    APACHE-SHA
+    APR1
+    BCRYPT
+    BCRYPTMD5
+    BCRYPTSHA1
+    LEET-SHA512-WRL-USER
+    MD5-MD5PASSMD5SALT
+    MD5SHA1BASE64SHA1MD5
+    MD5SHA1PASSMD5PASSSHA1PASS
+    MD5SHA1PASSSALT
+    MD5SQL3
+    MD5revMD5SHA1
+    MD5sub8-24MD5
+    MD5sub8-24MD5sub8-24MD5
+    MYSQL3
+    PHPBB3
+    SHA1-8TRACK
+    SHA1-MD5MD5SALT
+    SHA1-MD5SALT
+    SHA1-SALT-SPECIAL
+    SHA1-SALT-UTF16-PEPPER
+    SHA1-revMD5SALT
+    SHA1MD5PASS-SALT
+    SHA1MD5PASSSALT
+    SHA1SALTMD5PASS
+    SHA1SALTrevMD5PASS
+    SHA1SHA256
+    SHA1SHA385
+    SHA1SHA512
+    SHA1SQL3
+    SHA1UCWRL
+    SHA1USERSQL3
+    SHA1WRL
+    SHA1revMD5
+    SHA1revMD5PASSSALT
+    SHA256RAWSALTPASS
+    SHA512_CUSTOM1
+    YAF-SHA1
+
+--------------------------------------------
+mdxfind 1.51 (2016-08-21)
+- ?
+
+--------------------------------------------
