@@ -1,6 +1,24 @@
 -------------------------------------------------------------------------------
-MDXfind changelog
+MDXfind (and mdsplit) changelog
 Current location: https://www.techsolvency.com/pub/bin/mdxfind/CHANGES.txt
+-------------------------------------------------------------------------------
+mdxfind 1.135 (2025-09-12)
+- Fixed segfault in SNE128 and SNE256.
+
+- Force checks added for rhash variants.
+
+- Better flushing of stdout.
+
+- New hash types:
+    MD5DECBASE64MD5BASE64MD5
+
+-------------------------------------------------------------------------------
+mdxfind 1.134 (2025-08-28)
+
+- Fix allocation error on -k
+- Improved comfort message stats. 
+    (Now with more candidates per second! Faster response, even with "hard" hashes!)
+
 -------------------------------------------------------------------------------
 mdxfind 1.130 (2025-08-19)
 - All libraries are now included in all binaries (to remove dependencies).

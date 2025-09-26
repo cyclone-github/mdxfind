@@ -1,6 +1,5 @@
-# Algorithm list for MDXfind 
-#  $Header: /home/dlr/src/mdfind/RCS/mdxfind.c,v 1.130 2025/08/19 13:32:35 dlr Exp dlr $
-
+# Algorithm list for MDXfind 1.135
+# 
 AICH
 APACHE-SHA
 APR1
@@ -241,6 +240,7 @@ MD5CAPSHA1
 MD5CRYPT
 MD5DECBASE64
 MD5DECBASE64MD5
+MD5DECBASE64MD5BASE64MD5
 MD5DESCRYPT
 MD5DSALT
 MD5GOST
@@ -767,3 +767,5 @@ WRLSALTWRL
 WRLSHA512
 WRLWRLSALT
 YAF-SHA1
+
+------------------------------------------------------------------------------
