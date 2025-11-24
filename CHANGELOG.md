@@ -2,6 +2,14 @@
 MDXfind (and mdsplit) changelog
 Current location: https://www.techsolvency.com/pub/bin/mdxfind/CHANGES.txt
 -------------------------------------------------------------------------------
+mdxfind 1.136 (2025-11-10)
+- Fixed obscure bug affecting certain lengths of input strings when doing 
+  parallel-processed rules-based hashing. Discovered by hops.
+
+- Replaced Intel (.mac) and Apple Silicon (.macm1) with MacOSX universal binaries.
+  The final .mac-m1 and .mac-intel versions are in ./archive/retired if needed.
+
+-------------------------------------------------------------------------------
 mdxfind 1.135 (2025-09-12)
 - Fixed segfault in SNE128 and SNE256.
 

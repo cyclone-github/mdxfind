@@ -1,5 +1,6 @@
-# Algorithm list for MDXfind 1.135
-# 
+# Algorithm list for MDXfind 1.136
+# ./mdxfind.freebsd: $Header: /home/dlr/src/mdfind/RCS/mdxfind.c,v 1.136 2025/11/10 21:13:20 dlr Exp dlr $
+
 AICH
 APACHE-SHA
 APR1
@@ -767,5 +768,3 @@ WRLSALTWRL
 WRLSHA512
 WRLWRLSALT
 YAF-SHA1
-
-------------------------------------------------------------------------------
