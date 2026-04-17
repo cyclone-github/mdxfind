@@ -1,33 +1,7 @@
-This github repo is a convenience mirror for the latest available mdxfind binaries.
+This GitHub repo was previously a convenience mirror for the latest available mdxfind binaries.
 
-_All credits go to @[Waffle2](https://github.com/waffle2) and @[hops](https://github.com/hops)_
+You can now download mdxfind binaries directly from CsP's GitHub:
+https://github.com/Cynosureprime/mdxfind
 
-~~On debian, you will need to install `libjudy` https://packages.debian.org/search?keywords=libjudydebian1~~
-
-Special thanks to Tycho Tithonus @[roycewilliams](https://github.com/roycewilliams) for hosting binaries and info for mdxfind.
+Special thanks to Tycho Tithonus @[roycewilliams](https://github.com/roycewilliams) for hosting a mirror for binaries and info for mdxfind.
 - https://www.techsolvency.com/pub/bin/mdxfind/
-
-### mdxfind binaries
-sha256sum
-```
-acc668558430b440174f2dd4b9c3fcfd1bc58f7d325d08475e8c3fe829cefb64  mdsplit
-7f4700aeffb98be58fecdb096ab21fecb4c13769267187a90ad05286d381bffb  mdsplit-32
-f79e10ed35830acc0571d60dc99d1c0521b483a4d183cf2ba6f66b30c3bcc51f  mdsplit-32.exe
-15a00abbc3c7bd372aecb415c51fd4af2158ac9936ca009e621304431c36eebd  mdsplit.arm6
-15a00abbc3c7bd372aecb415c51fd4af2158ac9936ca009e621304431c36eebd  mdsplit.arm7
-fa2cbd8f7de2835d383bc743fbbabbd9d3d8a7c7cbb0350abbdcf4116fd86107  mdsplit.arm8
-c8158ffd9f4b5b0a7ae3c303d228a2f2a04ac780000f1cdc7002725d8b96eab9  mdsplit.exe
-c446802e260417545e9db84246610ae211f4064f2e884213be6fdfbb701daa2b  mdsplit.freebsd
-376754444b6e238c6b65dea37a965a1dc5d2157be519dc98d97ad86d5e0d227a  mdsplit.mac
-23a50778afe18fd3b0b484bf44267dfd8efbf999c16935e2f77348d811631ad6  mdsplit.power8
-fb1577a6b9ec6bb1f09a937d5d0833934e443ad932418cd75de45d26d96e5e65  mdxfind
-6883959c0882d0dfcf030cfe5315a9817a1c482f9190e3a47d7b6cb53d3403c1  mdxfind-32
-a22ae9f8869d8d965d52e9c0754bf25da7307da29dc83bd55a3845f66adbb146  mdxfind-32.exe
-c6eec24228090ebf8a6c85bcdfc9cb6cc9e5c5158219612fc8831dfde963cecb  mdxfind.arm6
-4e689a0179604af89d090aff02e396a116db5233b8fa0c3914dea057d120750d  mdxfind.arm7
-8931409a352c8a7bc839dc621667d8d934ec1b9852c193e4b5d7905e3b939b77  mdxfind.arm8
-6b91da9fd8f57cef428355d4f4b8bf78bf61285c8996f85801aa53e082f1e72c  mdxfind.exe
-2b391449f6b4eaa1ef8aa2b7349ae06a4a7c2cfac1b90707ffa081d78fb997e7  mdxfind.freebsd
-69be6dad355180d97ce8c791c6c38cb1987a451e121fd77d822d971b84b7dc28  mdxfind.mac
-5abd173200c2623092f5ffe608daacbdeed94a2f097cc9d882f065afcc77ca37  mdxfind.power8
-```
